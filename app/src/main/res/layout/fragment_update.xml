@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UpdateFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="416dp"
+            android:layout_height="168dp"
+            android:layout_marginTop="40dp"
+            android:shadowColor="#7A5A8A"
+            android:shadowDx="4"
+            android:shadowDy="-15"
+            android:src="@drawable/img_3"
+            android:text="UPDATE DATA"
+            android:textColor="#7A5A8A"
+            android:textSize="40sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+<!--            <EditText-->
+<!--            android:id="@+id/update_regno"-->
+<!--            android:layout_width="295dp"-->
+<!--            android:layout_height="54dp"-->
+<!--            android:background="@color/white"-->
+<!--            android:hint="ENTER YOUR ID"-->
+<!--            android:inputType="number"-->
+<!--            android:textSize="20dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.494"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.215" />-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="311dp"
+            android:layout_height="58dp"
+            android:background="@color/white"
+            android:hint=" ENTRY_DATE"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.749" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/update_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:inputType="number"
+                android:layout_marginLeft="6dp"
+ />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="311dp"
+            android:layout_height="58dp"
+            android:background="@color/white"
+            android:hint=" NAME"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.61"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.319" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/update_name"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="6dp"
+
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="311dp"
+            android:layout_height="58dp"
+            android:background="@color/white"
+            android:hint=" COURSE "
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.429">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/update_couse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="311dp"
+            android:layout_height="58dp"
+            android:background="@color/white"
+            android:textSize="20dp"
+            android:hint="DOB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.534" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/update_dob"
+android:layout_marginLeft="6dp"
+android:inputType="number"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="311dp"
+            android:layout_height="58dp"
+            android:background="@color/white"
+            android:hint="FATHER_NAME"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.639" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/update_father"
+                android:layout_width="299dp"
+android:layout_marginLeft="6dp"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE    "
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.894" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
